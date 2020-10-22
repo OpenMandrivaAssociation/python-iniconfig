@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.1.1
-Release:        11
+Release:        1
 Summary:        iniconfig: brain-dead simple config-ini parsing
 Group:          Development/Python
 License:        MIT
@@ -40,6 +40,6 @@ rm -rf %{pypi_name}.egg-info
 %files
 %license LICENSE
 %doc README.txt
-%{python_sitelib}/__pycache__/*
-%{python_sitelib}/%{pypi_name}.py
+#{python_sitelib}/__pycache__/*
+#{python_sitelib}/%{pypi_name}.py
 %{python_sitelib}/%{pypi_name}-*-py%{python_version}.egg-info
