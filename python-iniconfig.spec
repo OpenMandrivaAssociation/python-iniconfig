@@ -14,7 +14,7 @@ BuildArch:      noarch
 BuildRequires:  python-devel
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(py)
-BuildRequires:  python3dist(pytest)
+#BuildRequires:  python3dist(pytest)
 
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
