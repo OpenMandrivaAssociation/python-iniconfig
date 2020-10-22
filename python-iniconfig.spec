@@ -41,3 +41,4 @@ rm -rf %{pypi_name}.egg-info
 %license LICENSE
 %doc README.txt
 %{python_sitelib}/iniconfig/*
+%{python_sitelib}/iniconfig-*
