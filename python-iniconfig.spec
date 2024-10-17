@@ -7,7 +7,7 @@ Release:        4
 Summary:        iniconfig: brain-dead simple config-ini parsing
 Group:          Development/Python
 License:        MIT
-URL:            http://github.com/RonnyPfannschmidt/iniconfig
+URL:            https://github.com/RonnyPfannschmidt/iniconfig
 Source0:        %{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
 
