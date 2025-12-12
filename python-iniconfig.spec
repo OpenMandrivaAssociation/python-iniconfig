@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.1.1
-Release:        4
+Release:        5
 Summary:        iniconfig: brain-dead simple config-ini parsing
 Group:          Development/Python
 License:        MIT
