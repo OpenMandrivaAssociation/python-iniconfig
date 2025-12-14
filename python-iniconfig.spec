@@ -12,8 +12,9 @@ BuildArch:      noarch
 
 BuildSystem:	python
 BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(setuptools-scm)
 BuildRequires:  python%{pyver}dist(py)
-#BuildRequires:  python3dist(pytest)
+BuildRequires:	git-core
 
 %description
 iniconfig: brain-dead simple parsing of ini files iniconfig is a small and
@@ -23,7 +24,14 @@ entries * supports multi-line values with or without line-continuations *
 supports "" comments everywhere * raises errors with proper line-numbers * no
 bells and...
 
+%prep -a
+# Make setuptools-scm happy
+git init
+git add .
+git commit -am "Import %{version}"
+git tag -a %{version} -m %{version}
+
 %files
 %license LICENSE
 %{python_sitelib}/iniconfig/*
-%{python_sitelib}/iniconfig-*
+%{python_sitelib}/iniconfig-%{version}.dist-info
