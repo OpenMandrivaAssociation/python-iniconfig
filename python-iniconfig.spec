@@ -28,6 +28,8 @@ bells and...
 # Make setuptools-scm happy
 git init
 git add .
+git config user.name "OpenMandriva Builder"
+git config user.email "info@openmandriva.org"
 git commit -am "Import %{version}"
 git tag -a %{version} -m %{version}
 
