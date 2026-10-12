@@ -1,7 +1,7 @@
 %global pypi_name iniconfig
 
 Name:           python-%{pypi_name}
-Version:        2.3.0
+Version:        2.3.1
 Release:        1
 Summary:        iniconfig: brain-dead simple config-ini parsing
 Group:          Development/Python
@@ -11,9 +11,9 @@ Source0:        https://files.pythonhosted.org/packages/source/i/iniconfig/inico
 BuildArch:      noarch
 
 BuildSystem:	python
-BuildRequires:  python%{pyver}dist(setuptools)
-BuildRequires:  python%{pyver}dist(setuptools-scm)
-BuildRequires:  python%{pyver}dist(py)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	git-core
 
 %description
